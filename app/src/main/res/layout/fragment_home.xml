@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/actionBarDivider"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Shop Center"
+        app:menu="@menu/toolbar_menu" />
+
+
+    <!-- Ana içerik düzeni -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:visibility="gone"/>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer" />
+
+                <Button
+                    android:id="@+id/buyClickedd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TV" />
+
+                <Button
+                    android:id="@+id/cancelClicked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Supermarkt" />
+
+                <Button
+                    android:id="@+id/buyClicked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clothes" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/degisenView"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:contentDescription="TODO"
+            android:scaleType = "fitCenter"
+             />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Discover Our Foods"
+            android:textAlignment="textStart" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/afsgasg"
+                    />
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/asdasd"
+                    />
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/asfga"
+                    />
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/dfdfdfd"
+                    />
+                <ImageView
+                    android:id="@+id/image5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/lasmfgd"
+                    />
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/sadasdsa"
+                    />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/sepetClicked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3B2D61"
+            android:shadowColor="#FFFFFF"
+            android:text="Your Bag"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#9B4747"
+            android:textColorHint="#C8C0C0"
+            android:textColorLink="#304FFE"
+            app:rippleColor="#DA8E8E"
+            app:strokeColor="#5A4444" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

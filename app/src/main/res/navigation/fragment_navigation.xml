@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_navigation"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.olgunbingol.shopcenter.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_shopListFragment"
+            app:destination="@id/shopListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_signFragment"
+            app:destination="@id/signFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_urunFragment"
+            app:destination="@id/urunFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopListFragment"
+        android:name="com.olgunbingol.shopcenter.ShopListFragment"
+        android:label="fragment_shop_list"
+        tools:layout="@layout/fragment_shop_list" >
+        <action
+            android:id="@+id/action_shopListFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detayFragment"
+        android:name="com.olgunbingol.shopcenter.DetayFragment"
+        android:label="fragment_detay"
+        tools:layout="@layout/fragment_detay" />
+    <fragment
+        android:id="@+id/urunFragment"
+        android:name="com.olgunbingol.shopcenter.UrunFragment"
+        android:label="fragment_urun"
+        tools:layout="@layout/fragment_urun" >
+        <action
+            android:id="@+id/action_urunFragment_to_detayFragment"
+            app:destination="@id/detayFragment" />
+        <action
+            android:id="@+id/action_urunFragment_to_signFragment"
+            app:destination="@id/signFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signFragment"
+        android:name="com.olgunbingol.shopcenter.SignFragment"
+        android:label="fragment_sign"
+        tools:layout="@layout/fragment_sign" >
+        <action
+            android:id="@+id/action_signFragment_to_shopListFragment"
+            app:destination="@id/shopListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.olgunbingol.shopcenter.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_shopListFragment"
+            app:destination="@id/shopListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.olgunbingol.shopcenter.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
